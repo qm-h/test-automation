@@ -1,14 +1,10 @@
+import { IReq, IRes } from './types/types';
+
 import HttpStatusCodes from '@src/constants/HttpStatusCodes';
-
-import userService from '@src/services/user-service';
 import { IUser } from '@src/models/User';
-import { IReq, IRes } from './shared/types';
-
+import userService from '@src/services/UserService';
 
 // **** Variables **** //
-
-// Paths
-
 
 
 // **** Functions **** //
@@ -52,7 +48,6 @@ async function _delete(req: IReq, res: IRes) {
 // **** Export default **** //
 
 export default {
-  paths,
   getAll,
   add,
   update,
